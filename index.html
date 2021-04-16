@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAAS Layout</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="#">Software<span>Service</span></a>
+
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="images/menu.svg"
+          alt="navigation menu"
+        />
+
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="images/exit.svg"
+            alt="close menu"
+          />
+          <ul class="primiary-nav">
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+
+          <ul class="secondary-nav">
+            <li><a href="#">Contact</a></li>
+            <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">It's Fast &amp; cheap!</p>
+          <h1>A Task App that is Revolutionary</h1>
+          <div class="hero-cta">
+            <a href="#" class="primary-cta">Try for Free</a>
+            <a href="#" class="watch-video-cta">
+              <img src="images/watch.svg" alt="Watch video" /> Watch the Video
+            </a>
+          </div>
+        </div>
+        <img
+          class="hero-img"
+          src="images/illustration.svg"
+          alt="illustration"
+        />
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <ul class="features-list">
+          <li>Unlimited Tasks</li>
+          <li>SMS Task Reminders</li>
+          <li>Successful Reactions upon Task Completions</li>
+          <li>Social Media Announcements</li>
+          <li>Real Time Collaboration</li>
+          <li>Other Features</li>
+        </ul>
+        <img src="images/holding-phone.jpg" alt="holding phone" />
+      </div>
+    </section>
+    <section class="testimonial-section">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="images/person.jpg" alt="person" />
+            <blockquote>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              quae aliquam nihil suscipit soluta a. Cum molestias possimus
+              exercitationem, quia consequuntur vero blanditiis at voluptates,
+              rerum adipisci laboriosam obcaecati repellat."
+            </blockquote>
+            <cite>-John Doe</cite>
+          </li>
+          <li>
+            <img src="images/person.jpg" alt="person" />
+            <blockquote>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              quae aliquam nihil suscipit soluta a. Cum molestias possimus
+              exercitationem, quia consequuntur vero blanditiis at voluptates,
+              rerum adipisci laboriosam obcaecati repellat."
+            </blockquote>
+            <cite>-John Doe</cite>
+          </li>
+          <li>
+            <img src="images/person.jpg" alt="person" />
+            <blockquote>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              quae aliquam nihil suscipit soluta a. Cum molestias possimus
+              exercitationem, quia consequuntur vero blanditiis at voluptates,
+              rerum adipisci laboriosam obcaecati repellat."
+            </blockquote>
+            <cite>-John Doe</cite>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Contact</h2>
+          <form action="">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter Your Name"
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter email address"
+            />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Please leave a message."
+            ></textarea>
+            <input
+              type="submit"
+              class="send-message-cta"
+              value="Send Message"
+            />
+          </form>
+        </div>
+        <div class="contact-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101533.78430843879!2d-121.97475315448108!3d37.320467778171796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcb605f148ab5%3A0x930ab4516f8e822a!2sCentral%20San%20Jose%2C%20San%20Jose%2C%20CA!5e0!3m2!1sen!2sus!4v1618441529980!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      const nav = document.querySelector("nav");
+      const mobileBtnExit = document.getElementById("mobile-exit");
+
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+  </body>
+</html>
